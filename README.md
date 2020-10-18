@@ -135,11 +135,30 @@ Please change the following description in the user script and execute the URL r
 
 ### Copy Redmine code highlighting format  
 
+UserScript to copy Redmine Textile code highlight format to clipboard.  
+Using keyboard shortcuts that start with ʻalt + c`.
+
+[![Image from Gyazo](https://i.gyazo.com/dd47bc1d2d6b7586289884dea548d5c2.gif)](https://gyazo.com/dd47bc1d2d6b7586289884dea548d5c2)    
+
+* **Keyboard shortcuts**  
+
+|Keyboard shortcuts|Description|
+|:-----------------|:----------|
+|Alt + c j|Copy Java code highlighting format|
+|Alt + c J|Copy JavaScript code highlighting format|
+|Alt + c s|Copy SQL code highlighting format|
+|Alt + c h|Open this Help Url link|
+
+* **References**
+    * [Redmineのシンタックスハイライトの対応形式 | Redmine.JP Blog](http://blog.redmine.jp/articles/syntax-hilight/)    
+    * [RedmineCodeHighlightingLanguages - Redmine](https://www.redmine.org/projects/redmine/wiki/RedmineCodeHighlightingLanguages)  
+
 ----
 
 ### Copy Redmine's issue template
 
 UserScript to copy and paste Redmine issue template with keyboard shortcut.  
+Using keyboard shortcuts that start with ʻalt + t`.
 
 [![Image from Gyazo](https://i.gyazo.com/8c63b096d907b18e28a6cb0e96f7160d.gif)](https://gyazo.com/8c63b096d907b18e28a6cb0e96f7160d)
 

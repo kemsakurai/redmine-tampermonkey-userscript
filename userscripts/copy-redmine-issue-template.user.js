@@ -64,7 +64,6 @@
     });
 
     for (var  j =0;  j  < bindElems.length;  j++){
-        var count = j;
         Mousetrap.bind(bindElems[j].key, function() {
              this.func(this);
         }.bind(bindElems[j]));
