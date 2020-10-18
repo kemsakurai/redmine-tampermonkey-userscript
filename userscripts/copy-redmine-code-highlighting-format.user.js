@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Redmine の issue  の入力補助するTampermonkey スクリプト
 // @author       K.Sakurai
-// @match        https://my.redmine.jp/**/issues/**
+// @match        https://my.redmine.jp/**
 // @require      https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js
 // @resource     CSS1 https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css
 // @require      https://cdn.jsdelivr.net/npm/toastify-js
@@ -27,7 +27,6 @@
             text: "copy-redmine-code-highlighting-format.user.js [Help]",
             destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#copy-redmines-issue-template",
             close: true,
-            node: tbl,
             duration: 5000,
             gravity: "bottom", // `top` or `bottom`
             position: 'right', // `left`, `center` or `right`
@@ -41,7 +40,6 @@
     ];
 
     for (var  j =0;  j  < bindElems.length;  j++){
-        var count = j;
         Mousetrap.bind(bindElems[j].key, function() {
              this.func(this);
         }.bind(bindElems[j]));
@@ -56,7 +54,7 @@
         s.left = '-100%';
         document.body.appendChild(temp);
         document.getSelection().selectAllChildren(temp);
-        var result = document.execCommand('copy');
+        document.execCommand('copy');
         document.body.removeChild(temp);
     }
     // メッセージ通知
