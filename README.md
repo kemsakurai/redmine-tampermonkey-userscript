@@ -25,16 +25,20 @@ Tampermonkey userscript collection to assist redmine UI operation
 	| [Add SearchBox To Redmine][asr-help]   | [install][asr-raw] | 2020.10.18 | 2020.10.19|
     | [Auto execute Redmine Ganttchart Grep Bookmarklet][aer-help]| [install][aer-raw] | 2020.10.18 | 2020.10.19|
     | [Copy Page Link for Textile][cpl-help] | [install][cpl-raw] | 2020.10.18 | 2020.10.19|
+    | [Copy Redmine's issue template][cri-help] | [install][cri-raw] | 2020.10.19 | 2020.10.19|
     | [Display Redmine'wiki for Print][drw-help] | [install][drw-raw] | 2020.10.18 | 2020.10.19|
+
 
 [asr-help]: #Add-SearchBox-To-Redmine
 [aer-help]: #Auto-execute-Redmine-Ganttchart-Grep-Bookmarklet
 [cpl-help]: #Copy-Page-Link-for-Textile
+[cri-help]: #Copy-Redmine's-issue-template
 [drw-help]: #Display-Redmine'wiki-for-Print
 
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
 [aer-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/auto-execute-redmine-ganttchart-grep-bookmarklet.user.js
 [cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-textile.user.js
+[cri-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-issue-template.user.js
 [drw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/display-redmine-wiki-for-print.user.js
 
 ----
@@ -115,6 +119,24 @@ Please change the following description in the user script and execute the URL r
 ----
 
 ### Copy Redmine's issue template
+
+UserScript to copy and paste Redmine issue template with keyboard shortcut.  
+
+[![Image from Gyazo](https://i.gyazo.com/8c63b096d907b18e28a6cb0e96f7160d.gif)](https://gyazo.com/8c63b096d907b18e28a6cb0e96f7160d)
+
+* **Keyboard shortcuts**  
+
+|Keyboard shortcuts|Description|
+|:-----------------|:----------|
+|Alt + t 1|Copy request ticket template|
+|Alt + t 2|Copy measures ticket template|
+|Alt + t 3|Copy bug ticket template|
+|Alt + t 4|Copy question ticket template|
+|Alt + t h|Open this Help Url link|
+
+* **References**
+    * [Redmineのチケットの内容にテンプレを挿入するブックマークレット - Qiita](https://qiita.com/YoshikiIto/items/d10ed4c9c02a14c48ee7)
+    * [課題のテンプレートのサンプル集 – Backlog ヘルプセンター](https://support-ja.backlog.com/hc/ja/articles/360036146353-%E8%AA%B2%E9%A1%8C%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E9%9B%86)  
 
 ----
 

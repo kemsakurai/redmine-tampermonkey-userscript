@@ -54,7 +54,7 @@
     Mousetrap.bind('alt+t h', function() {
         Toastify({
             text: "copy-redmine-issue-template.user.js [Help]",
-            destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#Copy-Redmine's-issue-template",
+            destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#copy-redmines-issue-template",
             close: true,
             duration: 5000,
             gravity: "bottom", // `top` or `bottom`
