@@ -24,19 +24,22 @@ Tampermonkey userscript collection to assist redmine UI operation
 	|----------------------------------------|:------------------:|----------:|:----------:|
 	| [Add SearchBox To Redmine][asr-help]   | [install][asr-raw] | 2020.10.18 | 2020.10.19|
     | [Auto execute Redmine Ganttchart Grep Bookmarklet][aer-help]| [install][aer-raw] | 2020.10.18 | 2020.10.19|
+    | [Convert spreadsheet value to texttile table][csv-help] | [install][csv-raw] | 2020.10.19 | 2020.10.19|    
     | [Copy Page Link for Textile][cpl-help] | [install][cpl-raw] | 2020.10.18 | 2020.10.19|
     | [Copy Redmine's issue template][cri-help] | [install][cri-raw] | 2020.10.19 | 2020.10.19|
     | [Display Redmine'wiki for Print][drw-help] | [install][drw-raw] | 2020.10.18 | 2020.10.19|
-
+    
 
 [asr-help]: #Add-SearchBox-To-Redmine
 [aer-help]: #Auto-execute-Redmine-Ganttchart-Grep-Bookmarklet
-[cpl-help]: #Copy-Page-Link-for-Textile
 [cri-help]: #Copy-Redmine's-issue-template
+[cpl-help]: #Copy-Page-Link-for-Textile
+[csv-help]: #Convert-spreadsheet-value-to-texttile-table
 [drw-help]: #Display-Redmine'wiki-for-Print
 
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
 [aer-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/auto-execute-redmine-ganttchart-grep-bookmarklet.user.js
+[csv-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/convert-spreatsheetvalue-to-texttile-table.user.js
 [cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-textile.user.js
 [cri-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-issue-template.user.js
 [drw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/display-redmine-wiki-for-print.user.js
@@ -91,6 +94,16 @@ UserScript to start [redmine ganttchart grep bookmarklet](https://github.com/ama
 * **References**  
     * [amanoese/redmine-ganttchart-grep-bookmarklet: redmine ganttchart grep bookmarklet](https://github.com/amanoese/redmine-ganttchart-grep-bookmarklet)
     * [Redmineのガントチャート画面でツリー表示のまま検索する - Qiita](https://qiita.com/amanoese/items/edcc2226a6d52cc9598a)   
+
+----   
+
+### Convert spreadsheet value to texttile table
+
+A UserScript that converts tab-delimited tab-delimited data copied from a spreadsheet to texttile tab-style.  
+You to click the right mouse button and run from the context menu.  
+
+[![Image from Gyazo](https://i.gyazo.com/b328a436452fcf6d0416dc5e4face80b.gif)](https://gyazo.com/b328a436452fcf6d0416dc5e4face80b)  
+
 
 ----
 

@@ -5,9 +5,9 @@
 // @description  Redmine の issue  の入力補助するTampermonkey スクリプト
 // @author       K.Sakurai
 // @match        https://my.redmine.jp/**/issues/**
-// @require       https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js
-// @resource    CSS1 https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css
-// @require       https://cdn.jsdelivr.net/npm/toastify-js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js
+// @resource     CSS1 https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css
+// @require      https://cdn.jsdelivr.net/npm/toastify-js
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
 // ==/UserScript==
@@ -88,7 +88,7 @@
         { key: 'alt+s 1', label: "コメント欄へ移動",  text : '-', func: scrollToComments },
         { key: 'alt+s 2', label: "チケット内容欄へ移動",  text : '-', func: scrollToIssueProerties },
     ];
-    
+
     // creates a <table> element and a <tbody> element
     var tbl = document.createElement("table");
     var tblBody = document.createElement("tbody");
