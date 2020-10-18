@@ -19,8 +19,20 @@
         if(location.href.indexOf('/issues/new') != -1) {
              return;
         }
-        var ne = document.getElementById("issue_notes");if (ne == null){ ne = document.getElementById("notes"); };if (ne != null){ ne.style.height = "500px"; };
-        showAndScrollTo("update", "issue_notes");if (ne != null){ ne.focus(); }
+        var ne = document.getElementById("issue_notes");
+        var issueNoes = ne;
+        if (!ne) { 
+            ne = document.getElementById("notes");
+        }
+        if (ne) { 
+            ne.style.height = "500px"; 
+        }
+        if (issueNoes) {
+            showAndScrollTo("update", "issue_notes");
+        }
+        if(ne){ 
+            ne.focus();
+        }
     }
     function scrollToIssueDescription(elem) {
         var iD = null;
@@ -29,12 +41,21 @@
             if (iD != null){ iD.style.height = "500px"; iD.focus() };
             return;
         }
-        showAndScrollTo("update", "issue_notes");i
-        $(this).hide(); $("#issue_description_and_toolbar").show();
+        var ne = document.getElementById("issue_notes");
+        if (ne) {
+            showAndScrollTo("update", "issue_notes");
+        }
+        
+        var iDAT = document.getElementById("issue_description_and_toolbar");
+        if (iDAT) {
+            $(iDAT).show();
+        }
         iD = document.getElementById("issue_description");
-        if (iD != null){ iD.style.height = "500px"; iD.focus() };
+        if (iD != null) { 
+            iD.style.height = "500px";
+            iD.focus()
+        };
     }
-
     var bindElems = [
         { key: 'alt+s c', label: "コメント欄へ移動",  text : '-', func: scrollToComments },
         { key: 'alt+s d', label: "チケット内容欄へ移動",  text : '-', func: scrollToIssueDescription },
