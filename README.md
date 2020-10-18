@@ -23,14 +23,17 @@ Tampermonkey userscript collection to assist redmine UI operation
 	| Userscript Wiki                        | Direct<br>Install | Created    | Updated     |
 	|----------------------------------------|:------------------:|----------:|:----------:|
 	| [Add SearchBox To Redmine][asr-help]   | [install][asr-raw] | 2020.10.18 | 2020.10.19|
+    | [Auto execute Redmine Ganttchart Grep Bookmarklet][aer-help]| [install][aer-raw] | 2020.10.18 | 2020.10.19|
     | [Copy Page Link for Textile][cpl-help] | [install][cpl-raw] | 2020.10.18 | 2020.10.19|
     | [Display Redmine'wiki for Print][drw-help] | [install][drw-raw] | 2020.10.18 | 2020.10.19|
 
 [asr-help]: #Add-SearchBox-To-Redmine
+[aer-help]: #Auto-execute-Redmine-Ganttchart-Grep-Bookmarklet
 [cpl-help]: #Copy-Page-Link-for-Textile
 [drw-help]: #Display-Redmine'wiki-for-Print
 
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
+[aer-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/auto-execute-redmine-ganttchart-grep-bookmarklet.user.js
 [cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-textile.user.js
 [drw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/display-redmine-wiki-for-print.user.js
 
@@ -77,6 +80,13 @@ A user script that adds a search box at the bottom of the pull-down that increas
 
 ----
 
+### Auto execute Redmine Ganttchart Grep Bookmarklet  
+
+
+
+
+----
+
 ### Copy Page Link for Texttile  
 
 Copy the URL of the web page you are viewing as a link string in Textile format.  
@@ -111,3 +121,9 @@ You to click the right mouse button and run from the context menu.
 * **References**  
     * [RedmineのWikiページをそのまま印刷するためのブックマークレット | ハックノート](https://hacknote.jp/archives/10621/)
 
+
+### 
+
+* **References**  
+    * [amanoese/redmine-ganttchart-grep-bookmarklet: redmine ganttchart grep bookmarklet](https://github.com/amanoese/redmine-ganttchart-grep-bookmarklet)
+    * [Redmineのガントチャート画面でツリー表示のまま検索する - Qiita](https://qiita.com/amanoese/items/edcc2226a6d52cc9598a)   
