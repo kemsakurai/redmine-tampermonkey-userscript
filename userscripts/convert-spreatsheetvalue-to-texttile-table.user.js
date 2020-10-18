@@ -32,7 +32,7 @@
         s.left = '-100%';
         document.body.appendChild(temp);
         document.getSelection().selectAllChildren(temp);
-        var result = document.execCommand('copy');
+        document.execCommand('copy');
         document.body.removeChild(temp);
     }
 
@@ -49,9 +49,7 @@
     function convertSheetValueToTextTileTable(str) {
         str = str.replace(/\r\n/g, '\n');
         str = str.replace(/\r/g, '\n');
-        var wqlist = str.split("\"");
         var brs = str.split("\n");
-        var colfirst = 1;
         var result = "";
         var num = 0;
         if(str == null || str == "") {
