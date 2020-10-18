@@ -24,12 +24,15 @@ Tampermonkey userscript collection to assist redmine UI operation
 	|----------------------------------------|:------------------:|----------:|:----------:|
 	| [Add SearchBox To Redmine][asr-help]   | [install][asr-raw] | 2020.10.18 | 2020.10.19|
     | [Copy Page Link for Textile][cpl-help] | [install][cpl-raw] | 2020.10.18 | 2020.10.19|
+    | [Display Redmine'wiki for Print][drw-help] | [install][drw-raw] | 2020.10.18 | 2020.10.19|
 
 [asr-help]: #Add-SearchBox-To-Redmine
 [cpl-help]: #Copy-Page-Link-for-Textile
+[drw-help]: #Display-Redmine'wiki-for-Print
 
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
 [cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-textile.user.js
+[drw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/display-redmine-wiki-for-print.user.js
 
 ----
 
@@ -69,7 +72,7 @@ A user script that adds a search box at the bottom of the pull-down that increas
     // @match        https://my.redmine.jp/**/wiki/*
     ```
 
-* **Reference**  
+* **References**  
     * [プルダウンリストの項目を検索選択するためのBookmarklet - どこかのだれかへ](https://tepp.hatenablog.jp/entry/2017/04/05/215756)  
 
 ----
@@ -77,7 +80,7 @@ A user script that adds a search box at the bottom of the pull-down that increas
 ### Copy Page Link for Texttile  
 
 Copy the URL of the web page you are viewing as a link string in Textile format.  
-`@ run-at context-menu` allows you to click the right mouse button and run from the context menu.  
+You to click the right mouse button and run from the context menu.  
 
 [![Image from Gyazo](https://i.gyazo.com/0508f12918ec783877318ec0f679c6c6.gif)](https://gyazo.com/0508f12918ec783877318ec0f679c6c6)  
 
@@ -93,6 +96,18 @@ Please change the following description in the user script and execute the URL r
     }
 ```
 
-* **Reference**  
+* **References**  
     * [タイトルとURLを色々なフォーマットでコピーできるブックマークレット | デザインとWeb開発とその他諸々。 MEDIA-MASSAGE](https://media-massage.net/blog/linkbookmarklet/)
+
+----
+
+### Display Redmine'wiki for Print
+
+UserScript to display Redmine wiki for printing.  
+You to click the right mouse button and run from the context menu.  
+
+[![Image from Gyazo](https://i.gyazo.com/015dfbc4be75fcc5803c993d0e54dc8a.gif)](https://gyazo.com/015dfbc4be75fcc5803c993d0e54dc8a)  
+
+* **References**  
+    * [RedmineのWikiページをそのまま印刷するためのブックマークレット | ハックノート](https://hacknote.jp/archives/10621/)
 
