@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         redmine-ganttchart-grep-bookmarklet executor
+// @name         Auto execute Redmine Ganttchart Grep Bookmarklet
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  redmine-ganttchart-grep-bookmarklet を自動実行する
