@@ -22,10 +22,14 @@ Tampermonkey userscript collection to assist redmine UI operation
 
 	| Userscript Wiki                        | Direct<br>Install | Created    | Updated     |
 	|----------------------------------------|:------------------:|----------:|:----------:|
-	| [Add SearchBox To Redmine][asr-help]   | [install][asr-raw]] | 2020.10.18 | 2020.10.19|
+	| [Add SearchBox To Redmine][asr-help]   | [install][asr-raw] | 2020.10.18 | 2020.10.19|
+    | [Copy Page Link for Textile][cpl-help] | [install][cpl-raw] | 2020.10.18 | 2020.10.19|
 
 [asr-help]: #Add-SearchBox-To-Redmine
+[cpl-help]: #Copy-Page-Link-for-Textile
+
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
+[cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-texttile.user.js   
 
 ----
 
@@ -43,7 +47,7 @@ Userscripts are set up to automatically update. You can check for updates from w
 
 A user script that adds a search box at the bottom of the pull-down that increases the number of selection items in Redmine.  
 
-* Target field (id specified)  
+* **Target field (id specified)**    
     * Wiki  
         1. Parent page  
         [![Image from Gyazo](https://i.gyazo.com/7b1c925250854b02c1233c996950518f.png)](https://gyazo.com/7b1c925250854b02c1233c996950518f)
@@ -58,13 +62,37 @@ A user script that adds a search box at the bottom of the pull-down that increas
         1. Add filter  
         [![Image from Gyazo](https://i.gyazo.com/725dac5d433571d80b96acd78bdc7684.png)](https://gyazo.com/725dac5d433571d80b96acd78bdc7684)  
 
-* Setting  
+* **Setting**  
     Please modify the description of @match in the user script for your Redmine.  
     ```javascript
     // @match        https://my.redmine.jp/**/issues/*
     // @match        https://my.redmine.jp/**/wiki/*
     ```
 
-* Reference  
+* **Reference**  
     * [プルダウンリストの項目を検索選択するためのBookmarklet - どこかのだれかへ](https://tepp.hatenablog.jp/entry/2017/04/05/215756)  
+
+----
+
+### Copy Page Link for Texttile  
+
+Copy the URL of the web page you are viewing as a link string in Textile format.  
+`@ run-at context-menu` allows you to click the right mouse button and run from the context menu.  
+
+[![Image from Gyazo](https://i.gyazo.com/0508f12918ec783877318ec0f679c6c6.gif)](https://gyazo.com/0508f12918ec783877318ec0f679c6c6)  
+
+* **Setting**  
+When copying the URL on your Redmine, you may need the URL with the domain part of the URL removed.
+Please change the following description in the user script and execute the URL replacement process.
+```javascript
+    //  ここは、サイト分記載して修正する
+    var  mySites = ["https://my.redmine.jp"];
+    // mySites と一致する文字列は、空文字に置換する(ドメインルートからの絶対パスにしたい)
+    for (var i = 0; i < mySites.length;  i++) {
+         href = href.replace(mySites[i], '');
+    }
+```
+
+* **Reference**  
+    * [タイトルとURLを色々なフォーマットでコピーできるブックマークレット | デザインとWeb開発とその他諸々。 MEDIA-MASSAGE](https://media-massage.net/blog/linkbookmarklet/)
 

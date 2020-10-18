@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Copy Page Link for Texttile
+// @name         Copy Page Link for Textile
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  閲覧しているページをTexttile形式にコピーする
+// @description  閲覧しているWebページのURLをTextile形式でコピーする
 // @author       K.Sakurai
 // @run-at       context-menu
 // ==/UserScript==
