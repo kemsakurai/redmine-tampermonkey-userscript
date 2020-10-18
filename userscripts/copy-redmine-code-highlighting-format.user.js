@@ -19,7 +19,7 @@
     // Notice copied text
     function noticeCopyToClipBoard(elem) {
              copyToClipBoardFrom(elem.text);
-             noticeMessage();
+             noticeMessage(elem.message);
     }
     // Help keyboard short cut 
     Mousetrap.bind('alt+s h', function() {
@@ -34,9 +34,9 @@
     });
 
     var bindElems = [
-        { key: 'alt+c j', message: "Javaのコードハイライトのテンプレート",  text : '<pre>\n<code class="java">\nPlace you code here.\n</code>\n</pre>', func: noticeCopyToClipBoard},
-        { key: 'alt+c J', message: "JavaScriptのコードハイライトのテンプレート",  text : '<pre>\n<code class="javascript">\nPlace you code here.\n</code>\n</pre>', func: noticeCopyToClipBoard },
-        { key: 'alt+c s', message: "SQLのコードハイライトのテンプレート",  text : '<pre>\n<code class="sql">\nPlace you code here.\n</code>\n</pre>', func: noticeCopyToClipBoard }
+        { key: 'alt+c j', message: "Javaのコードハイライトのテンプレートをコピーしました。",  text : '<pre>\n<code class="java">\nPlace you code here.\n</code>\n</pre>', func: noticeCopyToClipBoard},
+        { key: 'alt+c J', message: "JavaScriptのコードハイライトのテンプレートをコピーしました。",  text : '<pre>\n<code class="javascript">\nPlace you code here.\n</code>\n</pre>', func: noticeCopyToClipBoard },
+        { key: 'alt+c s', message: "SQLのコードハイライトのテンプレートをコピーしました。",  text : '<pre>\n<code class="sql">\nPlace you code here.\n</code>\n</pre>', func: noticeCopyToClipBoard }
     ];
 
     for (var  j =0;  j  < bindElems.length;  j++){
