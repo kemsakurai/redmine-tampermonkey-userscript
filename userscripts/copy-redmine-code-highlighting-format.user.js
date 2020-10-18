@@ -22,7 +22,7 @@
              noticeMessage(elem.message);
     }
     // Help keyboard short cut 
-    Mousetrap.bind('alt+s h', function() {
+    Mousetrap.bind('alt+c h', function() {
         Toastify({
             text: "copy-redmine-code-highlighting-format.user.js [Help]",
             destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#copy-redmines-issue-template",
