@@ -24,14 +24,15 @@ Tampermonkey userscript collection to assist redmine UI operation
 	|----------------------------------------|:------------------:|----------:|:----------:|
 	| [Add SearchBox To Redmine][asr-help]   | [install][asr-raw] | 2020.10.18 | 2020.10.19|
     | [Auto execute Redmine Ganttchart Grep Bookmarklet][aer-help]| [install][aer-raw] | 2020.10.18 | 2020.10.19|
-    | [Convert spreadsheet value to texttile table][csv-help] | [install][csv-raw] | 2020.10.19 | 2020.10.19|    
+    | [Convert spreadsheet value to texttile table][csv-help] | [install][csv-raw] | 2020.10.19 | 2020.10.19| 
     | [Copy Page Link for Textile][cpl-help] | [install][cpl-raw] | 2020.10.18 | 2020.10.19|
+    | [Copy Redmine code highlighting format][crc-help] | [install][crc-raw] | 2020.10.19 | 2020.10.19|    
     | [Copy Redmine's issue template][cri-help] | [install][cri-raw] | 2020.10.19 | 2020.10.19|
     | [Display Redmine'wiki for Print][drw-help] | [install][drw-raw] | 2020.10.18 | 2020.10.19|
-    
 
 [asr-help]: #Add-SearchBox-To-Redmine
 [aer-help]: #Auto-execute-Redmine-Ganttchart-Grep-Bookmarklet
+[crc-help]: #Copy-Redmine-code-highlighting-format
 [cri-help]: #Copy-Redmine's-issue-template
 [cpl-help]: #Copy-Page-Link-for-Textile
 [csv-help]: #Convert-spreadsheet-value-to-texttile-table
@@ -40,6 +41,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
 [aer-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/auto-execute-redmine-ganttchart-grep-bookmarklet.user.js
 [csv-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/convert-spreatsheetvalue-to-texttile-table.user.js
+[crc-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-code-highlighting-format.user.js
 [cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-textile.user.js
 [cri-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-issue-template.user.js
 [drw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/display-redmine-wiki-for-print.user.js
@@ -128,6 +130,10 @@ Please change the following description in the user script and execute the URL r
 
 * **References**  
     * [タイトルとURLを色々なフォーマットでコピーできるブックマークレット | デザインとWeb開発とその他諸々。 MEDIA-MASSAGE](https://media-massage.net/blog/linkbookmarklet/)
+
+----
+
+### Copy Redmine code highlighting format  
 
 ----
 

@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Redmine's issue input helper
+// @name         Copy Redmine code highlighting format
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Redmine の issue  の入力補助するTampermonkey スクリプト
@@ -24,14 +24,16 @@
     // Help keyboard short cut 
     Mousetrap.bind('alt+s h', function() {
         Toastify({
-            text: "Menu",
+            text: "copy-redmine-code-highlighting-format.user.js [Help]",
+            destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#copy-redmines-issue-template",
+            close: true,
             node: tbl,
             duration: 5000,
             gravity: "bottom", // `top` or `bottom`
             position: 'right', // `left`, `center` or `right`
         }).showToast();
     });
-    
+
     var bindElems = [
         { key: 'alt+c j', message: "Javaのコードハイライトのテンプレート",  text : '<pre>\n<code class="java">\nPlace you code here.\n</code>\n</pre>', func: noticeCopyToClipBoard},
         { key: 'alt+c J', message: "JavaScriptのコードハイライトのテンプレート",  text : '<pre>\n<code class="javascript">\nPlace you code here.\n</code>\n</pre>', func: noticeCopyToClipBoard },
