@@ -17,7 +17,7 @@
     GM_addStyle(GM_getResourceText('CSS1'));
     function noticeSetIssueTemplate(elem) {
         document.getElementById("issue_description").value = document.getElementById("issue_description").value + elem.text;
-        noticeMessage("チケットテンプレートを設定しました");
+        noticeMessage(elem.message);
     }    
     var bugTicketTemplate =  "\n" +
         "h2. バグの概要\n\n(本来ならこう振る舞うべきという内容)\n\n"  +
@@ -45,16 +45,16 @@
         "h2. 関連資料\n\n(資料があればURLやURIを記載してください。)\n\n";
 
     var bindElems = [
-        { key: 'alt+t 1', label: "依頼チケットテンプレート",  text : requestTicketTemplate, func:  noticeSetIssueTemplate},
-        { key: 'alt+t 2', label: "施策チケットテンプレート",  text : measuresTicketTemplate, func:  noticeSetIssueTemplate },
-        { key: 'alt+t 3', label: "バグチケットテンプレート",  text : bugTicketTemplate, func:  noticeSetIssueTemplate },
-        { key: 'alt+t 4', label: "質問チケットテンプレート",  text : questionTicketTemplate , func:  noticeSetIssueTemplate}
+        { key: 'alt+t 1', message: "依頼チケットテンプレートを設定しました。",  text : requestTicketTemplate, func:  noticeSetIssueTemplate},
+        { key: 'alt+t 2', message: "施策チケットテンプレートを設定しました。",  text : measuresTicketTemplate, func:  noticeSetIssueTemplate },
+        { key: 'alt+t 3', message: "バグチケットテンプレートを設定しました。",  text : bugTicketTemplate, func:  noticeSetIssueTemplate },
+        { key: 'alt+t 4', message: "質問チケットテンプレートを設定しました。",  text : questionTicketTemplate , func:  noticeSetIssueTemplate}
     ];
 
     Mousetrap.bind('alt+t h', function() {
         Toastify({
-            text: "Copy Redmine's issue template Help",
-            destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript",
+            text: "copy-redmine-issue-template.user.js [Help]",
+            destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#Copy-Redmine's-issue-template",
             close: true,
             duration: 5000,
             gravity: "bottom", // `top` or `bottom`

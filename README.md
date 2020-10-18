@@ -82,8 +82,11 @@ A user script that adds a search box at the bottom of the pull-down that increas
 
 ### Auto execute Redmine Ganttchart Grep Bookmarklet  
 
+UserScript to start [redmine ganttchart grep bookmarklet](https://github.com/amanoese/redmine-ganttchart-grep-bookmarklet) on the target page.
 
-
+* **References**  
+    * [amanoese/redmine-ganttchart-grep-bookmarklet: redmine ganttchart grep bookmarklet](https://github.com/amanoese/redmine-ganttchart-grep-bookmarklet)
+    * [Redmineのガントチャート画面でツリー表示のまま検索する - Qiita](https://qiita.com/amanoese/items/edcc2226a6d52cc9598a)   
 
 ----
 
@@ -111,6 +114,10 @@ Please change the following description in the user script and execute the URL r
 
 ----
 
+### Copy Redmine's issue template
+
+----
+
 ### Display Redmine'wiki for Print
 
 UserScript to display Redmine wiki for printing.  
@@ -123,7 +130,3 @@ You to click the right mouse button and run from the context menu.
 
 
 ### 
-
-* **References**  
-    * [amanoese/redmine-ganttchart-grep-bookmarklet: redmine ganttchart grep bookmarklet](https://github.com/amanoese/redmine-ganttchart-grep-bookmarklet)
-    * [Redmineのガントチャート画面でツリー表示のまま検索する - Qiita](https://qiita.com/amanoese/items/edcc2226a6d52cc9598a)   
