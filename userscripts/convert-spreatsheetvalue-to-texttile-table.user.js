@@ -15,8 +15,11 @@
     'use strict';
     // CSS読み込み
     GM_addStyle(GM_getResourceText('CSS1'));
-    window.prompt("SpreadSheet の値を textileのtableに変換");
-    var result = convertSheetValueToTextTileTable();
+    var value = window.prompt("SpreadSheet の値を textileのtableに変換");
+    if (value == null || value == "") {
+        return;
+    }
+    var result = convertSheetValueToTextTileTable(value);
     copyToClipBoardFrom(result);
     noticeMessage("texttile形式に変換しました");
     
@@ -32,7 +35,7 @@
         var result = document.execCommand('copy');
         document.body.removeChild(temp);
     }
-    
+
     // メッセージ通知
     function noticeMessage(text) {
         Toastify({
