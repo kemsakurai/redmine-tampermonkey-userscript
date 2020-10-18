@@ -6,9 +6,11 @@
 // @author       K.Sakurai
 // @run-at       context-menu
 // ==/UserScript==
-
 (function() {
     'use strict';
+    if(location.href.indexOf('wiki') == -1) {
+        return;
+    }
     $("#header").remove();
     $("#top-menu").remove();
     $(".contextual").remove();
@@ -20,5 +22,5 @@
     $(".attachments").remove();
     $("#content").width("100%");
     $(".wiki-anchor").remove();
-    $("a").each(function(){child=this.childNodes;$(this).replaceWith(child);});    
+    $("a").each(function(){child=this.childNodes;$(this).replaceWith(child);});
 })();

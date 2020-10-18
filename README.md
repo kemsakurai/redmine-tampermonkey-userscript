@@ -29,7 +29,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 [cpl-help]: #Copy-Page-Link-for-Textile
 
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
-[cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-texttile.user.js   
+[cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-textile.user.js
 
 ----
 
