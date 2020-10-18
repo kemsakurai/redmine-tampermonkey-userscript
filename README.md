@@ -29,6 +29,7 @@ Tampermonkey userscript collection to assist redmine UI operation
     | [Copy Redmine code highlighting format][crc-help] | [install][crc-raw] | 2020.10.19 | 2020.10.19|    
     | [Copy Redmine's issue template][cri-help] | [install][cri-raw] | 2020.10.19 | 2020.10.19|
     | [Display Redmine'wiki for Print][drw-help] | [install][drw-raw] | 2020.10.18 | 2020.10.19|
+    | [Scroll Redmine issue][sri-help] | [install][sri-raw] | 2020.10.19 | 2020.10.19 |
 
 [asr-help]: #Add-SearchBox-To-Redmine
 [aer-help]: #Auto-execute-Redmine-Ganttchart-Grep-Bookmarklet
@@ -37,6 +38,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 [cpl-help]: #Copy-Page-Link-for-Textile
 [csv-help]: #Convert-spreadsheet-value-to-texttile-table
 [drw-help]: #Display-Redmine'wiki-for-Print
+[sri-help]: #Scroll-Redmine-issue
 
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
 [aer-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/auto-execute-redmine-ganttchart-grep-bookmarklet.user.js
@@ -45,6 +47,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 [cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-textile.user.js
 [cri-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-issue-template.user.js
 [drw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/display-redmine-wiki-for-print.user.js
+[sri-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/scroll-redmine-issue.user.js
 
 ----
 
@@ -189,4 +192,23 @@ You to click the right mouse button and run from the context menu.
     * [RedmineのWikiページをそのまま印刷するためのブックマークレット | ハックノート](https://hacknote.jp/archives/10621/)
 
 
-### 
+----
+
+### Scroll Redmine issue
+
+UserScript that supports scrolling to the description field and resizing of the input field, scrolling to the comment field, resizing of the input field.   
+Using keyboard shortcuts that start with ʻalt + s`.
+
+[![Image from Gyazo](https://i.gyazo.com/998bd70fab6855409ce09395e72feca8.gif)](https://gyazo.com/998bd70fab6855409ce09395e72feca8)
+
+* **Keyboard shortcuts**  
+
+|Keyboard shortcuts|Description|
+|:-----------------|:----------|
+|Alt + s c|Scroll to issue comment field and resize.|
+|Alt + s d|Scroll to issue description field and resize.|
+|Alt + s h|Open this Help Url link|
+
+* **References**     
+    * [Redmineでチケットの返信が便利になるブックマークレット作った | 長谷川智希 @tomzoh blog](https://www.hasegawa-tomoki.com/development/2015/02/25/redmine-bookmarklet-html/)
+
