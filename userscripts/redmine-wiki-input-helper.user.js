@@ -5,9 +5,9 @@
 // @description  Redmine の wiki  の入力補助するTampermonkey スクリプト
 // @author       K.Sakurai
 // @match        https://my.redmine.jp/**/wiki**
-// @require       https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js
-// @resource    CSS1 https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css
-// @require       https://cdn.jsdelivr.net/npm/toastify-js
+// @require      https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js
+// @resource     CSS1 https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css
+// @require      https://cdn.jsdelivr.net/npm/toastify-js
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
 // ==/UserScript==

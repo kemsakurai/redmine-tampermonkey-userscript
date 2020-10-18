@@ -55,6 +55,7 @@
         Toastify({
             text: "copy-redmine-issue-template.user.js [Help]",
             destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#copy-redmines-issue-template",
+            newWindow: true,
             close: true,
             duration: 5000,
             gravity: "bottom", // `top` or `bottom`

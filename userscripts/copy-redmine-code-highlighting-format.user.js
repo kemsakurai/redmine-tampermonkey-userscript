@@ -26,6 +26,7 @@
         Toastify({
             text: "copy-redmine-code-highlighting-format.user.js [Help]",
             destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#copy-redmine-code-highlighting-format",
+            newWindow: true,
             close: true,
             duration: 5000,
             gravity: "bottom", // `top` or `bottom`
