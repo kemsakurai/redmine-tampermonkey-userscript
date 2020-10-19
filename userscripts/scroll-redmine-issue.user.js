@@ -57,10 +57,9 @@
         };
     }
     var bindElems = [
-        { key: 'alt+s c', label: "コメント欄へ移動",  text : '-', func: scrollToComments },
-        { key: 'alt+s d', label: "チケット内容欄へ移動",  text : '-', func: scrollToIssueDescription },
+        { key: 'alt+s c', func: scrollToComments },
+        { key: 'alt+s d', func: scrollToIssueDescription },
     ];
-
     for (var  j =0;  j  < bindElems.length;  j++){
         Mousetrap.bind(bindElems[j].key, function() {
              this.func(this);
