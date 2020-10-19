@@ -21,6 +21,7 @@
              copyToClipBoardFrom(elem.text);
              noticeMessage(elem.message);
     }
+    
     // Help keyboard short cut 
     Mousetrap.bind('alt+c h', function() {
         Toastify({
