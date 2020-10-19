@@ -58,17 +58,19 @@
     }
     var bindElems = [
         { key: 'alt+s c', func: scrollToComments },
-        { key: 'alt+s d', func: scrollToIssueDescription },
+        { key: 'alt+s d', func: scrollToIssueDescription }
     ];
+
     for (var  j =0;  j  < bindElems.length;  j++){
         Mousetrap.bind(bindElems[j].key, function() {
              this.func(this);
         }.bind(bindElems[j]));
     }
+
     Mousetrap.bind('alt+s h', function() {
        Toastify({
             text: "scroll-redmine-issue.user.js [Help]",
-            destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#copy-redmine-code-highlighting-format",
+            destination: "https://github.com/kemsakurai/redmine-tampermonkey-userscript#scroll-redmine-issue",
             newWindow: true,
             close: true,
             duration: 5000,

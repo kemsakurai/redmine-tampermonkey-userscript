@@ -30,7 +30,8 @@ Tampermonkey userscript collection to assist redmine UI operation
     | [Copy Redmine wiki macro][crw-help] | [install][crw-raw] | 2020.10.19 | 2020.10.19|
     | [Copy Redmine's issue template][cri-help] | [install][cri-raw] | 2020.10.19 | 2020.10.19|
     | [Display Redmine'wiki for Print][drw-help] | [install][drw-raw] | 2020.10.18 | 2020.10.19|
-    | [Scroll Redmine issue][sri-help] | [install][sri-raw] | 2020.10.19 | 2020.10.19 |
+    | [Scroll Redmine issue][sri-help] | [install][sri-raw] | 2020.10.19 | 2020.10.20 |
+    | [Switch visibility of Redmine sidebar][svr-help] | [install][svr-raw] | 2020.10.19 | 2020.10.19 |
 
 [asr-help]: #Add-SearchBox-To-Redmine
 [aer-help]: #Auto-execute-Redmine-Ganttchart-Grep-Bookmarklet
@@ -41,6 +42,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 [csv-help]: #Convert-spreadsheet-value-to-texttile-table
 [drw-help]: #Display-Redmine'wiki-for-Print
 [sri-help]: #Scroll-Redmine-issue
+[svr-help]: #Switch-visibility-of-Redmine-sidebar
 
 [asr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/add-search-box-to-redmine.user.js
 [aer-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/auto-execute-redmine-ganttchart-grep-bookmarklet.user.js
@@ -51,6 +53,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 [crw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-wiki-macro.user.js
 [drw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/display-redmine-wiki-for-print.user.js
 [sri-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/scroll-redmine-issue.user.js
+[svr-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/switch-visibility-of-redmine-sidebar.user.js
 
 ----
 
@@ -240,4 +243,24 @@ Using keyboard shortcuts that start with ʻalt + s`.
 
 * **References**     
     * [Redmineでチケットの返信が便利になるブックマークレット作った | 長谷川智希 @tomzoh blog](https://www.hasegawa-tomoki.com/development/2015/02/25/redmine-bookmarklet-html/)
+
+---
+
+### Switch visibility of Redmine sidebar    
+
+UserScript to switch sidebar of Redmine with keyboard shortcut.  
+In addition, there is a function to save the previous display state in localstorage.  
+
+[![Image from Gyazo](https://i.gyazo.com/35d520680e1b6d4d3c31a38c0b275cf7.gif)](https://gyazo.com/35d520680e1b6d4d3c31a38c0b275cf7)
+
+* **Keyboard shortcuts**  
+
+|Keyboard shortcuts|Description|
+|:-----------------|:----------|
+|Alt + →|Show Sidebar|
+|Alt + ←|Hide Sidebar|
+
+* **References**     
+    * [Hide Sidebar - Plugins - Redmine](https://www.redmine.org/plugins/sidebar_hide)  
+    Redmine has a plugin called `Hide Sidebar` that allows you to show or hide the sidebar. If you install the plugin, you don't need to use this user script.   
 
