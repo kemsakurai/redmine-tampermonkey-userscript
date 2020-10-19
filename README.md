@@ -26,7 +26,8 @@ Tampermonkey userscript collection to assist redmine UI operation
     | [Auto execute Redmine Ganttchart Grep Bookmarklet][aer-help]| [install][aer-raw] | 2020.10.18 | 2020.10.19|
     | [Convert spreadsheet value to texttile table][csv-help] | [install][csv-raw] | 2020.10.19 | 2020.10.19| 
     | [Copy Page Link for Textile][cpl-help] | [install][cpl-raw] | 2020.10.18 | 2020.10.19|
-    | [Copy Redmine code highlighting format][crc-help] | [install][crc-raw] | 2020.10.19 | 2020.10.19|    
+    | [Copy Redmine code highlighting format][crc-help] | [install][crc-raw] | 2020.10.19 | 2020.10.19|
+    | [Copy Redmine wiki macro][crw-help] | [install][crw-raw] | 2020.10.19 | 2020.10.19|
     | [Copy Redmine's issue template][cri-help] | [install][cri-raw] | 2020.10.19 | 2020.10.19|
     | [Display Redmine'wiki for Print][drw-help] | [install][drw-raw] | 2020.10.18 | 2020.10.19|
     | [Scroll Redmine issue][sri-help] | [install][sri-raw] | 2020.10.19 | 2020.10.19 |
@@ -35,6 +36,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 [aer-help]: #Auto-execute-Redmine-Ganttchart-Grep-Bookmarklet
 [crc-help]: #Copy-Redmine-code-highlighting-format
 [cri-help]: #Copy-Redmine's-issue-template
+[crw-help]: #Copy-Redmine-wiki-macro
 [cpl-help]: #Copy-Page-Link-for-Textile
 [csv-help]: #Convert-spreadsheet-value-to-texttile-table
 [drw-help]: #Display-Redmine'wiki-for-Print
@@ -46,6 +48,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 [crc-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-code-highlighting-format.user.js
 [cpl-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-page-link-for-textile.user.js
 [cri-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-issue-template.user.js
+[crw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/copy-redmine-wiki-macro.user.js
 [drw-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/display-redmine-wiki-for-print.user.js
 [sri-raw]: https://github.com/kemsakurai/redmine-tampermonkey-userscript/raw/main/userscripts/scroll-redmine-issue.user.js
 
@@ -180,6 +183,32 @@ Using keyboard shortcuts that start with ʻalt + t`.
     * [課題のテンプレートのサンプル集 – Backlog ヘルプセンター](https://support-ja.backlog.com/hc/ja/articles/360036146353-%E8%AA%B2%E9%A1%8C%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E9%9B%86)  
 
 ----
+
+### Copy Redmine wiki macro  
+
+UserScript to copy Redmine wiki  macro syntax with keyboard shortcut.  
+Using keyboard shortcuts that start with ʻalt + w`.  
+
+[![Image from Gyazo](https://i.gyazo.com/8b37c79ef0bd31f6c00107416645bee8.gif)](https://gyazo.com/8b37c79ef0bd31f6c00107416645bee8)
+
+* **Keyboard shortcuts**  
+
+|Keyboard shortcuts|Description|macro syntax|
+|:-----------------|:----------|:-----------|
+|Alt + w 1|Table of contents (left justified)|{{toc}}|
+|Alt + w 2|Table of contents (right justified)|{{>toc}}|
+|Alt + w 3|Show list of child pages|{{child_pages}}|
+|Alt + w 4|Include and view Wiki pages|{{include(Foo)}}|
+|Alt + w 5|Show thumbnail of image|{{thumbnail(Foo.png)}}|
+|Alt + w 6|Collapse display|{{collapse(詳細を表示...)\nこの部分はデフォルトでは折り畳まれた状態で表示されます。\nリンクをクリックすると展開されます。\n}}|
+|Alt + w q|Block quote text|bq.|
+|Alt + w w|Display issue|{{issue(123, project=true, tracker=true, subject=false)}}|
+|Alt + W h|Open this Help Url link|-|
+
+* **References**  
+    * [RedmineTextFormattingTextile - Redmine](https://www.redmine.org/projects/redmine/wiki/RedmineTextFormattingTextile)
+
+----  
 
 ### Display Redmine'wiki for Print
 
