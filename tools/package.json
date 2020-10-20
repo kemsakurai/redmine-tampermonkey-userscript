@@ -1,0 +1,18 @@
+{
+  "name": "redmine-tampermonkey-script-tools",
+  "version": "1.0.0",
+  "description": "A tool to modify the @match description in Tampermonkey scripts for your Redmine environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "execute": "node index.js"
+  },
+  "keywords": [
+    "tampermonkey"
+  ],
+  "author": "K.Sakurai",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^6.1.0"
+  }
+}
