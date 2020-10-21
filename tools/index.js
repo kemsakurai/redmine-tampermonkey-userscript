@@ -6,8 +6,10 @@ const outputDirectry = './outputs';
 const jsonObject = JSON.parse(fs.readFileSync('./conf/data.json', 'utf8'));
 
 // １ファイルの内容を置換する
-function replaceSyntax(filePath) {
-    let text = fs.readFileSync(filePath, 'utf-8');
+function replaceSyntax(dir, fileName) {
+    console.log("replaceSyntax>>>", fileName);
+    const fullPath = path.join(dir, fileName);
+    let text = fs.readFileSync(fullPath, 'utf-8');
     // --------------
     // 複数行にわたる@match記述を、@@@match@@@に置換する
     // -------
@@ -18,7 +20,7 @@ function replaceSyntax(filePath) {
     } else {
         result = resuttArray[0];
     }
-    let matchStrings = jsonObject[path.basename(filePath)];
+    let matchStrings = jsonObject[path.basename(fullPath)];
     let elems = [];
     for (let elem of matchStrings) {
         elems.push("// @match" + "    " + elem);
@@ -26,29 +28,39 @@ function replaceSyntax(filePath) {
     result = result.replace('@@@match@@@', elems.join('\n'));
     return result;
 }
+// 置換したファイルを書き出す
+function writeMatchReplacedFile(fileName, result) {
+    console.log("writeMatchReplacedFile>>>", fileName);
+    const writeFullPath = path.join(outputDirectry, fileName);
+    try {
+        fs.writeFileSync(writeFullPath, result);
+    } catch (e) {
+        throw e;
+    }
+}
 
 // ファイル全ての内容を置換する
 function replaceSyntaxAll(dir) {
     const filenames = fs.readdirSync(dir);
-    filenames.forEach((filename) => {
-        const fullPath = path.join(dir, filename);
-        let result = replaceSyntax(fullPath);
-        const writeFullPath = path.join(outputDirectry, filename);
-        try {
-            fs.writeFileSync(writeFullPath, result);
-        } catch (e) {
-            throw e;
-        }
+    filenames.forEach((fileName) => {
+        let result = replaceSyntax(dir, fileName);
+        writeMatchReplacedFile(fileName, result);
     });
 }
 
 // コマンドライン引数をcommanderでパースする
 const program = new Command();
+program
+  .version('0.1.0')
+  .arguments('<fileName>')
+  .action(function (fileName) {
+    console.log("@match replace start...");
+    if (fileName === "all") {
+        replaceSyntaxAll(userScirptsDirectry);
+    } else {
+        let result = replaceSyntax(userScirptsDirectry, fileName);
+        writeMatchReplacedFile(fileName, result);
+    }
+    console.log("@match replace end...");
+  });
 program.parse(process.argv);
-// ファイルパスをprogram.args配列から取り出す
-const filePath = program.args[0];
-if (typeof fullPath === "undefined") {
-    replaceSyntaxAll(userScirptsDirectry);
-} else {
-    replaceSyntax(filePath);
-}
