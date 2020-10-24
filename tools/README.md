@@ -12,7 +12,6 @@ git clone https://github.com/kemsakurai/redmine-tampermonkey-userscript.git
 cd tools
 npm install 
 ```
-
 -------
 
 ## Configration  
@@ -49,3 +48,8 @@ node index.js all
 ```console
 node index.js add-search-box-to-redmine.user.js  
 ```
+
+## Output files       
+
+The files are output under the `tools/outputs` directory.     
+
