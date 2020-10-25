@@ -20,7 +20,7 @@ Tampermonkey userscript collection to assist redmine UI operation
 	* Learn more about the userscript by clicking on the named link. You will be taken to the specific help page.
 	* Install a script directly from GitHub by clicking on the "install" link in the table below.  
 
-	| Userscript Wiki                        | Direct<br>Install | Created    | Updated     |
+	| Userscript Help                        | Direct<br>Install | Created    | Updated     |
 	|----------------------------------------|:------------------:|----------:|:----------:|
 	| [Add SearchBox To Redmine][asr-help]   | [install][asr-raw] | 2020.10.18 | 2020.10.19|
     | [Auto execute Redmine Ganttchart Grep Bookmarklet][aer-help]| [install][aer-raw] | 2020.10.18 | 2020.10.19|
