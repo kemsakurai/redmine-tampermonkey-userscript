@@ -10,6 +10,7 @@
 // @require      https://cdn.jsdelivr.net/npm/toastify-js
 // @grant        GM_addStyle
 // @grant        GM_getResourceText
+// @grant        GM_setClipboard
 // ==/UserScript==
 (function() {
     'use strict';
@@ -58,14 +59,6 @@
     }
     // クリップボードにコピーする
     function copyToClipBoardFrom(text) {
-        var temp = document.createElement('div');
-        temp.appendChild(document.createElement('pre')).textContent = text;
-        var s = temp.style;
-        s.position = 'fixed';
-        s.left = '-100%';
-        document.body.appendChild(temp);
-        document.getSelection().selectAllChildren(temp);
-        var result = document.execCommand('copy');
-        document.body.removeChild(temp);
+        GM_setClipboard(text);
     }
 })();

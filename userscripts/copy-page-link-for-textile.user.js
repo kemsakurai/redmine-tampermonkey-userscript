@@ -4,6 +4,8 @@
 // @version      0.1
 // @description  閲覧しているWebページのURLをTextile形式でコピーする
 // @author       K.Sakurai
+// @match        http*://*/*
+// @grant        GM_setClipboard
 // @run-at       context-menu
 // ==/UserScript==
 (function() {
@@ -16,13 +18,5 @@
          href = href.replace(mySites[i], '');
     }
     var text = '"' + document.title.replace(/"/g, '')+'":' + href;
-    var temp = document.createElement('div');
-    temp.appendChild(document.createElement('pre')).textContent = text;
-    var s = temp.style;
-    s.position = 'fixed';
-    s.left = '-100%';
-    document.body.appendChild(temp);
-    document.getSelection().selectAllChildren(temp);
-    var result = document.execCommand('copy');
-    document.body.removeChild(temp);
+    GM_setClipboard(text);
 })();
